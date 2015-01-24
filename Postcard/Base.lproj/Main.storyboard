@@ -55,7 +55,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -81,13 +81,13 @@
                                     <rect key="frame" x="219" y="163" width="124" height="100"/>
                                 </variation>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-c5-pDp">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-c5-pDp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="87" width="235" height="21"/>
+                                    <rect key="frame" x="16" y="87" width="328" height="59"/>
                                 </variation>
                             </label>
                             <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJp-df-BUc">
@@ -98,12 +98,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="348" width="235" height="32"/>
+                                    <rect key="frame" x="16" y="409" width="236" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qz-Vd-ijN"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-gz-6Jy">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="201" width="174" height="35"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="jVg-BG-CMu"/>
                                 <exclude reference="z0V-c5-pDp"/>
                                 <exclude reference="yJp-df-BUc"/>
+                                <exclude reference="hJH-gz-6Jy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -126,6 +136,7 @@
                             <mask key="subviews">
                                 <include reference="z0V-c5-pDp"/>
                                 <include reference="yJp-df-BUc"/>
+                                <include reference="hJH-gz-6Jy"/>
                             </mask>
                         </variation>
                     </view>
@@ -134,11 +145,12 @@
                         <outlet property="enterNameTextField" destination="OcG-Bl-Mp4" id="iyi-12-AUc"/>
                         <outlet property="mailButton" destination="yJp-df-BUc" id="hIA-yX-Vpc"/>
                         <outlet property="messageLabel" destination="z0V-c5-pDp" id="Nmw-Nz-eQo"/>
+                        <outlet property="nameLabel" destination="hJH-gz-6Jy" id="5Eq-1v-Ekr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1783.5" y="529"/>
+            <point key="canvasLocation" x="1783.5" y="528.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dj8-Vq-TYr">
